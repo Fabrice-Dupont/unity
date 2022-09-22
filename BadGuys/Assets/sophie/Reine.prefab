@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3501424647364443379}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.077, y: -0.974, z: 0}
+  m_LocalPosition: {x: -0.103, y: -0.747, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 3501424647540520852}
   - component: {fileID: 3501424647540520851}
   - component: {fileID: 3501424647540520872}
+  - component: {fileID: 1355833594}
   m_Layer: 8
   m_Name: Reine
   m_TagString: Player
@@ -132,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86575a7e34378304f828dbba38b580f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 350
+  moveSpeed: 650
   jumpForce: 400
   groundCheck: {fileID: 3501424647364443378}
   groundCheckRadius: 1.2
@@ -173,7 +174,7 @@ Animator:
   m_GameObject: {fileID: 3501424647540520848}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d90fc901c335a104b87d1ed682694faf, type: 2}
+  m_Controller: {fileID: 9100000, guid: f853e17529dca4b7995a622b89c33350, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -199,3 +200,18 @@ CapsuleCollider2D:
   m_Offset: {x: -0.19157743, y: 0.118584156}
   m_Size: {x: 1.4089165, y: 3.5652857}
   m_Direction: 0
+--- !u!114 &1355833594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3501424647540520848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aa9443e6f6f44a4ab9ed5e1a4210df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  healthBar: {fileID: 0}
