@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 3501424647540520851}
   - component: {fileID: 3501424647540520872}
   - component: {fileID: 1355833594}
-  - component: {fileID: 8395367360088934571}
+  - component: {fileID: 4590672122425838962}
   m_Layer: 8
   m_Name: Reine
   m_TagString: Player
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 8000
-  jumpForce: 3000
+  jumpForce: 500
   groundCheck: {fileID: 3501424647364443378}
   groundCheckRadius: 1.2
   collisionLayers:
@@ -220,7 +220,7 @@ MonoBehaviour:
   isInvincible: 0
   graphics: {fileID: 3501424647540520854}
   healthBar: {fileID: 0}
---- !u!114 &8395367360088934571
+--- !u!114 &4590672122425838962
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
