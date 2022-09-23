@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 3501424647540520851}
   - component: {fileID: 3501424647540520872}
   - component: {fileID: 1355833594}
+  - component: {fileID: 8395367360088934571}
   m_Layer: 8
   m_Name: Reine
   m_TagString: Player
@@ -109,7 +110,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 10
   m_Sprite: {fileID: -532924930, guid: 3d9cd31f5d2fd2749a6a5f1a5fa8d6be, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -133,8 +134,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86575a7e34378304f828dbba38b580f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 650
-  jumpForce: 400
+  moveSpeed: 8000
+  jumpForce: 3000
   groundCheck: {fileID: 3501424647364443378}
   groundCheckRadius: 1.2
   collisionLayers:
@@ -155,10 +156,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 3
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_Interpolate: 2
   m_SleepingMode: 1
@@ -214,4 +215,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
+  invincibilityFlashDelay: 0.2
+  invincibilityTimeAfterHit: 3
+  isInvincible: 0
+  graphics: {fileID: 3501424647540520854}
+  healthBar: {fileID: 0}
+--- !u!114 &8395367360088934571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3501424647540520848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aa9443e6f6f44a4ab9ed5e1a4210df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  invincibilityFlashDelay: 0.2
+  invincibilityTimeAfterHit: 3
+  isInvincible: 0
+  graphics: {fileID: 3501424647540520854}
   healthBar: {fileID: 0}
